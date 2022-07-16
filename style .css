@@ -1,0 +1,109 @@
+body {
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.clock {
+    padding-left: 1em;
+    font-size: 3em;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    position: relative;
+    top: -0.1em;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+button {
+    border-radius: 0.5em;
+    font-weight: bold;
+    width: 10em;
+    height: 3em;
+    background-color: #540581;
+    color: #1E9145;
+    margin-right: 1em;
+}
+
+.lapped {
+
+    font-size: 3em;
+}
+
+
+
+#hist {
+
+    font-size: 3em;
+    justify-content: left;
+}
+
+#bruh {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#smol,
+#pol {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+}
+
+body.dark-theme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* defaults to dark theme */
+    body {
+        --text-color: #eee;
+        --bkg-color: #121212;
+    }
+
+    body.light-theme {
+        --text-color: #222;
+        --bkg-color: #fff;
+    }
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bkg-color);
+}
+
+h1,
+p,
+.lapped,
+#hist,
+.clock,
+ul {
+    color: var(--text-color);
+}
